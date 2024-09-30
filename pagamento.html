@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+    
+    <link rel="stylesheet" href="pagamento.css">
+    <link rel="shortcut icon" href="Imagens/credit-card-solid.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="payment-container">
+        <h2>Pagamento</h2>
+        <form class="payment-form" action="resumo.html" method="get" onsubmit="showConfirmation(event)">
+            <label for="cardBrand">Bandeira do Cartão</label>
+            <select id="cardBrand" name="cardBrand" required>
+                <option value="" disabled selected>Selecione...</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="American Express">American Express</option>
+            </select>
+            
+            <label for="cardNumber">Número do Cartão</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="Insira 16 dígitos numéricos" maxlength="16" pattern="\d{16}" title="Insira 16 dígitos numéricos">
+
+            <label for="expiryDate">Data de Expiração (MM/AA)</label>
+            <input type="text" id="expiryDate" name="expiryDate" required pattern="(0[1-9]|1[0-2])\/?([0-9]{2})" placeholder="MM/AA" title="Formato MM/AA">
+
+            <label for="securityCode">Código de Segurança</label>
+            <input type="text" id="securityCode" name="securityCode" required placeholder="Insira 3 ou 4 dígitos numéricos" maxlength="4" pattern="\d{3,4}" title="Insira 3 ou 4 dígitos numéricos">
+            
+            <!-- Botão de finalizar dentro do formulário -->
+            <button type="submit">Finalizar</button>
+        </form>
+    </div>
+
+    <script>
+        function showConfirmation(event) {
+            event.preventDefault(); 
+            alert("Pedido finalizado com sucesso!");
+            event.target.submit(); 
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+* {
+    font-family: "Raleway", system-ui;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+body {
+    overflow: hidden;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(Imagens/pexels-valeriya-1199960.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.box {
+    position: relative;
+}
+
+.box .quadrado {
+    position: absolute;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        transform: translateY(-40px);
+    }
+
+    50% {
+        transform: translateY(40px);
+    }
+}
+
+.box .quadrado:nth-child(1) {
+    top: -50px;
+    right: -60px;
+    width: 100px;
+    height: 100px;
+    animation-delay: calc(-.8s * var(--i));
+}
+
+.box .quadrado:nth-child(2) {
+    top: 150px;
+    left: -90px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    animation-delay: calc(-3s * var(--i));
+}
+
+.box .quadrado:nth-child(3) {
+    bottom: 50px;
+    right: -100px;
+    width: 80px;
+    height: 80px;
+    z-index: 2;
+    animation-delay: calc(-1.5s * var(--i));
+}
+
+.box .quadrado:nth-child(4) {
+    bottom: -80px;
+    left: 100px;
+    width: 50px;
+    height: 50px;
+    animation-delay: calc(-5s * var(--i));
+}
+
+.box .quadrado:nth-child(5) {
+    top: -80px;
+    left: 50px;
+    width: 60px;
+    height: 60px;
+    animation-delay: calc(-1s * var(--i));
+}
+
+.box .quadrado:nth-child(6) {
+    top: -30px;
+    left: -150px;
+    width: 70px;
+    height: 70px;
+    animation-delay: calc(-3s * var(--i));
+}
+
+.box .quadrado:nth-child(7) {
+    top: 350px;
+    left: -150px;
+    width: 80px;
+    height: 80px;
+    animation-delay: calc(-4s * var(--i));
+}
+
+.box .quadrado:nth-child(8) {
+    top: 450px;
+    right: -150px;
+    width: 60px;
+    height: 60px;
+    animation-delay: calc(-2s * var(--i));
+}
+
+.box .quadrado:nth-child(9) {
+    top: 150px;
+    right: -180px;
+    width: 60px;
+    height: 60px;
+    animation-delay: calc(-.5s * var(--i));
+}
+
+
+.login-container {
+
+    background: rgba(255, 255, 255, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.1px);
+    -webkit-backdrop-filter: blur(11.1px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+
+    padding: 30px;
+    text-align: center;
+
+    width: 400px;
+    min-height: 400px;
+}
+
+.login-container h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.title {
+    background: linear-gradient(90deg, #39fda2, #00d853);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .title::before{
+    content: '';
+
+    left: 23%;
+    top: 42px;
+
+    width: 50%;
+    height: 4px;
+
+    position: absolute;
+
+    background: linear-gradient(90deg, #39fda2, #00d853);
+    
+    border-radius: 5px;
+  }
+  
+.login-container h2 {
+    margin: 0 0 20px;
+    position: relative;
+    color: #fff;
+    font-size: 26px;
+    letter-spacing: 2px;
+    margin-bottom: 35px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 16px 0 12px;
+}
+
+input {
+    width: 94%;
+    border: none;
+    outline: none;
+
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+
+    margin-bottom: 15px;
+
+    padding: 16px 12px;
+}
+
+::placeholder{
+    color: #FFF;
+
+    font-weight: 600;
+}
+
+button {
+    width: 100%;
+    padding: 16px 12px;
+    background-color: #01c755;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    font-weight: 600;
+
+    font-size: 16px;
+
+    transition: .2s ease;
+}
+
+a, .efect{
+
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+button:hover {
+    opacity: .8;
+}
+
+p {
+    margin-top: 15px;
+}

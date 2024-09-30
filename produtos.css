@@ -1,0 +1,159 @@
+* {
+    font-family: "Raleway", system-ui;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Imagens/pexels-valeriya-1199960.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+p {
+    margin: 5px 0;
+}
+
+h3 {
+    color: #fff;
+    text-align: center;
+
+    font-size: 56px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.lista_combos,
+.lista_simples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.produto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 25px;
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.descricao-produto {
+    margin-top: 10px;
+}
+
+.title-main{
+    color: #fff;
+}
+
+.description {
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.price {
+    margin-top: -10px;
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.rating {
+
+    margin-top: -25px;
+
+    font-size: 20px;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h3{
+    color: #0a0a0a;
+    margin-bottom: 21px;
+}
+
+p {
+    margin: 32px 0;
+}
+
+i {
+    color: #daa520;
+}
+
+button {
+    display: block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: fit-content;
+    position: relative;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.footer-button {
+    display: flex;
+    justify-content: center;
+
+
+    width: 100%;
+
+    padding-bottom: 25px;
+
+    background: rgba(255, 255, 255, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, .5);
+
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-button p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-button i {
+    margin-top: -8px;
+    margin-bottom: 18px;
+    color: #fff;
+}
