@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="shortcut icon" href="Imagens/burger-solid.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,14 +30,15 @@
             <div class="background">
                 <div class="login-container">
                     <h2> <span class="title">HAMBURGUERIA 10</span> <br><br> O melhor sanduíche de Goiânia!</h2>
-                    <form class="login-form">
+                    <form class="login-form" id="loginForm">
                         <label for="email">Email</label>
                         <input type="email" id="email" name="email" placeholder="Digite seu Email:" required>
 
                         <label for="password">Senha</label>
-                        <input type="password" id="password" name="password" placeholder="Digite sua Senha:"required>
+                        <input type="password" id="password" name="password" placeholder="Digite sua Senha:" required>
 
-                        <button type="button" onclick="location.href='produtos.html'">Confirmar</button>
+
+                        <button type="submit">Confirmar</button>
 
                         <p>Não tem conta? <a href="cadastro.html"><span class="efect">Cadastrar</span></a></p>
                     </form>
@@ -47,6 +48,8 @@
         </div>
 
     </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
